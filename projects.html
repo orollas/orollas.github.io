@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niklas Stockfisch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+</head>
+<body>
+    <button style="position: sticky; top: 20px; right: 20px; border: none; cursor: pointer; z-index: 1000;" onclick="window.location.href='home.html';">
+        <i class="fas fa-home" style="font-size: 24px;"></i> Home
+    </button>
+    
+      
+
+    <div class="image-container">
+        <img id="ProjectImage" src="Images/projectOverlay.webp" alt="image">
+            <p class="Project-header-text">
+                Master Thesis (WIP):
+            </p>
+           <p class="Project-content-text">
+            The title of the master's thesis is 
+            "Physics-based Simulation of Autonomous Bubble Detection Based on Visual and Acoustic Sensing", it is written at the <a href="https://www.marum.de/index.html" target="_blank">MARUM</a>. 
+            The thesis involves the development of a simulation of an underwater environment in Unreal Engine 5.3. 
+            The simulation encompasses the simulation of sensors such as a sonar and a camera, as well as an underwater environment with methane leaks. 
+            Additionally, a system for autonomous bubble detection is developed. The system utilises two U-Net models to segment sonar and camera images provided by the simulation.
+            (For more informations see the extended abstract (its still work in progress))
+          </p>
+          <div class="pdf-overlay">
+            <button class="fullscreen-btn" id="fullscreenMA-btn">Full screen</button>
+            <div class="pdf-box" id="pdfMA-box">
+              <canvas id="pdf-canvas"></canvas>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="image-container">
+            <img id="ProjectImage" src="Images/projectOverlay.webp" alt="image">
+                <p class="Project-header-text">
+                    Master Project (Triplesim)
+                </p>
+               <p class="Project-content-text">
+                The Triplesim master project of <a href="https://cgvr.cs.uni-bremen.de/" target="_blank">CGVR</a> and 
+                <a href="https://www.marum.de/index.html" target="_blank">MARUM</a>
+                works towards creating a simulation of an underwater exploration of an icy moon in a virtual environment. 
+                This project takes place in the context of the TRIPLE project, which plans such missions in the future. 
+                A focus of this project is simulating the navigation of an autonomous underwater vehicle (AUV) in Unreal Engine 5.2. 
+                For this purpose, the simulation contains many sensors that are commonly used for navigation.
+              </p>
+              <div class="pdf-overlay">
+                <button class="fullscreen-btn" id="fullscreenMP-btn">Full screen</button>
+                <div class="pdf-box" id="pdfMP-box">
+                  <canvas id="pdf-canvas"></canvas>
+                </div>
+              </div>
+            
+            </div>
+
+            <div class="image-container">
+                <img id="ProjectImage" src="Images/projectOverlay.webp" alt="image">
+                    <p class="Project-header-text">
+                        HCI course project
+                    </p>
+                   <p class="Project-content-text">
+                    Master course of the Human Computer Interaction group at the university of bremen. 
+                    The idea of this project was to develop a smart home system that uses tangible objects as a method of expressing emotions.
+                     It uses 3D printed objects with RFID chips and an RFID scanner, based on the chosen object the system changes music and lighting.
+                  </p>
+                  <div class="pdf-overlay">
+                    <button class="fullscreen-btn" id="fullscreenHCI-btn">Full screen</button>
+                    <div class="pdf-box" id="pdfHCI-box">
+                      <canvas id="pdf-canvas"></canvas>
+                    </div>
+                  </div>
+                
+                </div>
+
+                <div class="image-container">
+                    <img id="ProjectImage" src="Images/projectOverlay.webp" alt="image">
+                        <p class="Project-header-text">
+                            Bachelor Thesis
+                        </p>
+                       <p class="Project-content-text">
+                        The subject of this bachelor's thesis is the development of an android application for text-to-speech (TTS). The app is designed to assist users in creating their own dataset.
+                        It is able to record files via the user's smartphone and upload their own texts or books, which the user can then read aloud.
+                        The app also features a server backend that hosts a Tacotron model, which can be trained with the user's dataset. The trained model can then be used as a TTS.
+                        (The report is only in German)
+                      </p>
+                      <div class="pdf-overlay">
+                        <button class="fullscreen-btn" id="fullscreenBA-btn">Full screen</button>
+                        <div class="pdf-box" id="pdfBA-box">
+                          <canvas id="pdf-canvas"></canvas>
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                    <div class="image-container">
+                        <img id="ProjectImage" src="Images/projectOverlay.webp" alt="image">
+                            <p class="Project-header-text">
+                                Bachelor Project
+                            </p>
+                           <p class="Project-content-text">
+                            Bachelor project at <a href="https://www.marum.de/index.html" target="_blank">MARUM</a>. The task was to autonomously detect pollution on beaches. 
+                            It uses object detection to detect pollution. A pipeline with different pre- and post-processing methods was developed.
+                            (The report is only in German)
+                          </p>
+                          <div class="pdf-overlay">
+                            <button class="fullscreen-btn" id="fullscreenBP-btn">Full screen</button>
+                            <div class="pdf-box" id="pdfBP-box">
+                              <canvas id="pdf-canvas"></canvas>
+                            </div>
+                          </div>
+                        
+                        </div>
+
+                        <div class="image-container">
+                            <img id="ProjectImage" src="Images/projectOverlay.webp" alt="image">
+                                <p class="Project-header-text">
+                                    Data Science course project
+                                </p>
+                               <p class="Project-content-text">
+                                Data Science Master Course project. A segmentation model was used for the purpose of detecting the dessication of lakes or coastal erosion. The model in question is known as the DeepLabV3+ model. 
+                                The objective of the study was to detect water on RGB satellite images. The detection was then used to create a history of the amount of coastal erosion or dessication.
+                              </p>
+                              <div class="pdf-overlay">
+                                <button class="fullscreen-btn" id="fullscreenDS-btn">Full screen</button>
+                                <div class="pdf-box" id="pdfDS-box">
+                                  <canvas id="pdf-canvas"></canvas>
+                                </div>
+                              </div>
+                            
+                            </div>
+
+    <script src="scriptsProject.js" defer></script>
+
+</body>
+</html>
+
+
+
