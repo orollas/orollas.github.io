@@ -25,7 +25,7 @@ new TypeIt("#Intro", {
     .delete(6)
     .type("funny things")
     .break({ delay: 500 })
-    .type("(this is my first website so if you finde some bugs, im sorry lol)")
+    .type("(this is my first website so if you find some bugs, im sorry lol)")
     .pause(500)
     .delete(200)
     .type("<em>Greetings Niklas</em>")

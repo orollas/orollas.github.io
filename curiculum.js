@@ -34,8 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .break({ delay: 500 })
         .type("Tensorflow: ★★★☆☆")
         .break({ delay: 500 })
-        .type("Tensorflow: ★★★☆☆")
-        .break({ delay: 500 })
         .type("ROS2: ★★★★☆")
         .break({ delay: 500 })
         .type("Docker: ★★☆☆☆")
